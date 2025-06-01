@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void readgraph(int n,int a[10][10])
 {
     int i,j;
@@ -9,7 +8,6 @@ void readgraph(int n,int a[10][10])
         scanf("%d", &a[i][j]);
     }
 }
-
 void find_indegree(int n, int a[10][10], int indegre[])
 {
     int i,j,sum;
@@ -22,7 +20,6 @@ void find_indegree(int n, int a[10][10], int indegre[])
         indegre[j]=sum;
     }
 }
-
 void topological_sort(int n, int a[10][10])
 {
     int i, k, u, v, top, t[10],indegre[10],s[10];
@@ -52,13 +49,11 @@ void topological_sort(int n, int a[10][10])
     for(i=0;i<n;i++)
     printf("%d",t[i]);
 }
-
 void main()
 {
     int n, a[10][10];
     printf(" \n Enter number of values");
     scanf("%d",&n);
-    
     printf("\n Enter adjacency matrix");
     readgraph(n,a);
     topological_sort(n,a);
