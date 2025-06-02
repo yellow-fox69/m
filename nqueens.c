@@ -8,7 +8,6 @@ int can_place(int c[], int r) {
         return 0;
     return 1;
 }
-
 void display(int c[], int n) {
     int i, j;
     char cb[10][10];
@@ -23,7 +22,6 @@ void display(int c[], int n) {
     printf("\n");
     }
 }
-
 void n_queens(int n) {
     int r, c[MAX];
     c[0]=-1;
@@ -45,7 +43,6 @@ void n_queens(int n) {
         }
     }
 }
-
 int main() {
     int n;
     printf("Enter the number of queens: ");
