@@ -16,7 +16,6 @@ void find_indegree(int n, int a[10][10], int indegre[])
         sum=0;
         for(i=0;i<n;i++)
         sum+=a[i][j];
-        
         indegre[j]=sum;
     }
 }
